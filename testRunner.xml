@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+
+<listeners>
+<listener class-name="com.qa.listenersE.ExtentReporterNG"></listener>
+<listener class-name="com.atp.qa.utils.MyTransformer"></listener>
+</listeners>
+  <test name="TwoTest">
+    <classes>
+     <!--  <class name="com.atp.qa.Tests.MyAccountPageTet"/> -->
+      <class name="com.atp.qa.Tests.LogInPagetest">
+      <methods>
+      <include name="verifyTitle"></include>
+      <include name="logoVerifyTest"></include>
+      <include name="loginTest"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
